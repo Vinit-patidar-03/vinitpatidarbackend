@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/', async (req, res) => {
+app.post('/', async (req, res) => {
     let success = false;
     try {
         const { name, email, message } = req.body;
